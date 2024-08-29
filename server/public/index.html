@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+        integrity="sha512-Xm9qbB6Pu06k3PUwPj785dyTl6oHxgsv9nHp7ej7nCpAqGZT3OZpsELuCYX05DdonFpTlBpXMOxjavIAIUwr0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="popup">
+            <form class="form-login">
+                <div class="panel">
+                        <p id="title">Login</p>
+                        <input type="text" id="username" placeholder="Username" size="5">
+                        <input type="text" id="email" placeholder="Your email" size="5" required>
+                        <input type="password" id="password" placeholder="Password" size="5" required>
+                        <button id="login" type="submit">Login</button>
+                        <button id="create-account" type="button">Create Account</button>
+                        <button id="swap-state" type="button">Create Account</button>
+                        <p id="loginReport"></p>
+                </div>
+            </form>
+        </div>
+        <div class="blocker"></div>
+        <form class="form-join">
+            <p id="name">Username</p>
+            <input type="text" id="room" placeholder="Chat room" size="5" required>
+            <button id="join" type="submit">Join</button>
+        </form>
+
+        <ul class="chat-display"></ul>
+
+        <p class="user-list"></p>
+        <p class="room-list"></p>
+        <p class="activity"></p>
+
+        <form class="form-msg">
+            <input type="text" id="message" placeholder="Your message" required>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+
+</html>

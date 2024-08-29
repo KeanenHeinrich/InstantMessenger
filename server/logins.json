@@ -1,0 +1,19 @@
+{
+  "logins": [
+    {
+      "username": "Billy",
+      "email": "testmail@gmail.com",
+      "password": "12345"
+    },
+    {
+      "username": "Sally",
+      "email": "testmail2@gmail.com",
+      "password": "12345"
+    },
+    {
+      "username": "Keanen",
+      "email": "keanenheinrich@gmail.com",
+      "password": "12345"
+    }
+  ]
+}
